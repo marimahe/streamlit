@@ -10,3 +10,4 @@ st.toast("Warming up...")
 st.error("Error message")
 st.button("Done")
 
+st.toggle("Enable")
