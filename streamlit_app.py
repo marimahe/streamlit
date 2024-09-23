@@ -11,3 +11,4 @@ st.error("Error message")
 st.button("Done")
 
 st.toggle("Enable")
+st.slider("Pick a number", 0, 100)
