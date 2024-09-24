@@ -10,6 +10,23 @@ st.toast("Warming up...")
 st.error("Error message")
 st.button("Done")
 
+
+# Two equal columns:
+col1, col2 = st.columns(2)
+col1.write("This is column 1")
+col2.write("This is column 2")
+
+# Three different columns:
+col1, col2, col3 = st.columns([3, 1, 1])
+# col1 is larger.
+
+# Bottom-aligned columns
+col1, col2 = st.columns(2, vertical_alignment="bottom")
+
+# You can also use "with" notation:
+with col1:
+    st.radio("Select one:", [1, 2])
+  
 st.button("Click me")
 #st.download_button("Download file", data)
 st.feedback("thumbs")
